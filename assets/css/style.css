@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(255, 213, 220);
+    padding: 1.25rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    display: flex;
+
+}
+
+main {
+    background-color: white;
+    flex-wrap: wrap;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.184);
+    padding: .94rem;
+}
+
+
+h1 {
+    font-size: 400%;
+    font-family: sans-serif, 'Times New Roman', Helvetic;
+    margin-top: 5rem;
+    border-right: .2rem;
+    font-weight: lighter;
+
+}
+
+h2 {
+    text-align: left;
+    font-size: 200%;
+    margin-top: 1rem;
+}
+
+h3 {
+    padding-top: 1rem;
+
+}
+nav a {
+    color: black;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+    list-style: none;
+    padding: .625rem;
+    margin-bottom: 1rem;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.uolist {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.aboutme {
+    display: flex;
+    padding: 1.25rem;
+
+}
+
+
+
+.project {
+    background-color: aliceblue;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    align-items: center;
+
+}
+
+.work {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    text-align: center;
+
+}
+
+
+#first {
+    height: 16rem;
+    border: 1px solid black;
+    margin: 3rem;
+    max-width: fit-content;
+}
+
+
+
+nav a:hover {
+    color: yellow;
+}
+
+.project:active {
+    border: .25rem solid rgba(75, 208, 177, 0.53) ;
+}
+
+
+@media screen and (max-width: 768px) {
+    nav ul {
+     flex-direction: column; 
+     text-align: center;  
+    }
+
+    #first {
+        width: 22rem
+    }
+
+
+}
