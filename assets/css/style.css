@@ -1,30 +1,37 @@
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     margin: 0;
+    padding: 0%;
 }
 
 body {
-    background-color: rgb(255, 213, 220);
+    position: relative;
+    background-color: rgb(246, 242, 233);
     padding: 1.25rem;
-    flex-direction: column;
-    justify-content: flex-start;
-    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: flex-start; */
+    /* display: flex; */
 
 }
 
 main {
-    background-color: white;
-    flex-wrap: wrap;
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.184);
+    /* flex-wrap: wrap; */
     padding: .94rem;
+    width: 75rem;
+    margin-left: 2rem;
+    margin-right: 5rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 
-h1 {
-    font-size: 400%;
-    font-family: sans-serif, 'Times New Roman', Helvetic;
-    margin-top: 5rem;
-    border-right: .2rem;
+header h1 {
+    font-size: 200%;
     font-weight: lighter;
 
 }
@@ -35,79 +42,172 @@ h2 {
     margin-top: 1rem;
 }
 
-h3 {
-    padding-top: 1rem;
-
-}
 nav a {
     color: black;
     font-weight: lighter;
-    text-decoration: none;
 }
 
 nav ul {
     display: flex;
     justify-content: space-evenly;
-    border-top: 1.5px solid black;
-    border-bottom: 1.5px solid black;
     list-style: none;
     padding: .625rem;
     margin-bottom: 1rem;
 }
 
-.header {
+p {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
-
-.uolist {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    align-items: center;
-    justify-content: space-evenly;
-}
 
 .aboutme {
     display: flex;
     padding: 1.25rem;
+    margin-top: 1rem;
+    flex-direction: row;
+    text-align: left;
+    text-justify: inter-word;
+    padding: 20px;
+    width: 90%;
+    margin-bottom: 20px;
+    justify-content: space-around;
+    background-color: rgb(250, 249, 244);
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.184);
+    line-height: 2.5rem;
 
 }
 
+.name {
+    color: rgb(73, 131, 105);
+    background-color: rgb(174, 234, 207);
+    padding: .5rem;
+    border-radius: 1rem;
+    max-width: 15rem;
+}
 
-
-.project {
-    background-color: aliceblue;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    align-items: center;
+.top-left {
+    position: absolute;
+    color: rgb(125, 67, 125);;
+    background-color: rgb(230, 187, 230);
+    padding: 2rem;
+    margin-top: 13rem;
+    border-radius: 1rem;
 
 }
+
+.picture {
+    max-width: 30%;
+    max-height: 10%;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.184);
+}
+
+.float-left {
+    float: left;
+}
+
+
+.day {
+    color:  rgb(115, 149, 170);
+    background-color: rgb(174, 211, 234);
+    padding: .5rem;
+    border-radius: 1rem;
+    max-width: 15rem; 
+}
+
+
+.hero {
+    background-image: url(../css/images/loo.png);
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 10px;
+}
+
+
 
 .work {
     flex: 2;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: space-evenly;
-    text-align: center;
+    /* justify-content: space-evenly; */
+    /* text-align: center; */
+}
 
+.workbox {
+    flex-direction: row;
+    text-align: left;
+    text-justify: inter-word;
+    background-color: white;
+    padding: 20px;
+    width: 90%;
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.184);
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+
+.containerflex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 2rem;
+}
+
+
+.project2{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.projectimage {
+    background-size: cover;
+    width: 99%;
+    height: 300px;
+}
+
+#cc {
+    background-image: url(../css//images/landing_page.png);
+}
+
+#planner {
+    background-image: url(../css//images/WorkDayScheduler.html.png);
+}
+
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    text-justify: inter-word;
+    background-color: rgb(249, 247, 211);
+    padding: 20px;
+    width: 90%;
+    margin-bottom: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: black;
+    border-radius: round;
 }
 
 
 #first {
-    height: 16rem;
-    border: 1px solid black;
+    height: 30rem;
     margin: 3rem;
-    max-width: fit-content;
+    max-width: 80rem;
 }
 
 
 
 nav a:hover {
-    color: yellow;
+    color: pink;
 }
 
 .project:active {
@@ -115,15 +215,36 @@ nav a:hover {
 }
 
 
+@media screen and (max-width: 899px) {
+    .aboutme {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+
 @media screen and (max-width: 768px) {
     nav ul {
      flex-direction: column; 
      text-align: center;  
     }
 
-    #first {
-        width: 22rem
+    header {
+        display: block;
+        text-align: center;
     }
+
+    .project2 {
+        display: block;
+    }
+
+    .contact {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
 
 
 }

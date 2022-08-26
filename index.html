@@ -4,35 +4,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Elia's Css Portfolio</title>
+  <title>Elia's Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="./assets/css/ reset.css" />
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
 </head>
 
 
 <body>
-  <header>
-    <div class="header">
-      <h1>Elia Martinez</h1>
-      <div>
-        <img src="./assets/css/images/Avatar.png" alt="my avatar next to heading" />
-      </div>
-    </div>
 
-    <nav>
-      <ul>
-        <li><a href="#aboutMe">About Me</a></li>
-        <li><a href="#myWork">My Work</a></li>
-        <li><a href="#contact">Contact</a></li>
+  <header>
+    <h1>Elia Martinez</h1>
+    <nav class="navbar navbar-expand-lg  d-flex float-right">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#aboutme">About Me <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#work">My Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
       </ul>
-    </nav>
+      </div>
   </header>
 
   <Main>
-    <section>
-      <h2>About Me</h2>
-      <div class="aboutme">
-        <p> Welcome to my portfolio! My name is Elia and I currently work in medical education at Northwestern
+    <div>
+      <h2 id="aboutme">About Me</h2>
+      <section class="aboutme">
+        <img src="./assets/css/images/Elia.jpg" class="picture float-left" alt="elia in about me" />
+        <p class="ml-4 mt-5">
+          I'm Elia.
+          Currently work in medical education at Northwestern
           University.
           I am currently enrolled in a coding bootcamp in hopes of pursuing a new career. I look forward to gaining
           more
@@ -43,49 +48,70 @@
           providing mindfulness to
           the chaos of life. With the knowledge from my experience in education, the knowledge I gain from this course
           and
-          a little bit of mindfullness, I look forward to adding a differnt perspective to the coding world.
+          a little bit of mindfulness, I look forward to adding a different perspective to the coding world.
         </p>
+      </section>
+    </div>
+
+
+    <h2 id="work" class="work">Work</h2>
+    <section class="workbox">
+      <div class="container">
+        <div class="top-left">
+          <caption>LOO: Accessible Bathroom Geolocator</caption><br>
+          <div class="align-left">
+            <a href="https://safe-haven-bathrooms.github.io/App/">Application</a> | <a
+              href="https://github.com/Safe-Haven-Bathrooms/App">Repo</a>
+          </div>
+        </div>
+        <a href="https://safe-haven-bathrooms.github.io/App/" target="_blank" alt="LOO: accessible bathroom app">
+          <img class="hero" />
+        </a>
+      </div>
+      <div class="project2">
+        <div class="containerflex">
+          <div class="name">
+            <caption>Community Care Professionals</caption>
+            <div class="align-left">
+              <a href="https://sleepy-bayou-09403.herokuapp.com/">Deployed App</a> | <a
+                href="https://github.com/CommunityCareProfessionals/communityCareProfessionals-">Repo</a>
+            </div>
+          </div>
+          <a href="https://sleepy-bayou-09403.herokuapp.com/" target="_blank" alt="community care">
+            <img class="projectimage" id="cc" />
+          </a>
+        </div>
+        <div class="containerflex">
+          <div class="day">
+            <caption>Work Day Scheduler</caption>
+            <div>
+              <a href="https://eliamart.github.io/workDayScheduler/">Deployed App</a> | <a
+                href="https://github.com/EliaMart/workDayScheduler">Repo</a>
+            </div>
+          </div>
+          <a href=" https://eliamart.github.io/workDayScheduler/" target="_blank" alt="day planner">
+            <img class="projectimage" id="planner" />
+          </a>
+        </div>
       </div>
     </section>
 
-    <div>
-      <section>
-        <h2 id="myWork">My Work</h2>
-        <div class="project">
-          <h3>Project 1</h3>
-          <a href="https://github.com/EliaMart/HoriseonRefractory"><img id="first" src="./assets/css/images/placeholder-image-wide.png" alt="placeholder 1" /></a>
-        </div>
-      </section>
-    </div>
 
-
-    <div class="work">
-      <section>
-        <div class="project">
-          <h3>Project 2</h3>
-          <a href="https://github.com/EliaMart/HoriseonRefractory"><img id="first" src="./assets/css/images/placeholder.png" alt="placeholder 2" /></a>
-        </div>
-      </section>
-
-      <section>
-        <div class="project">
-          <h3>Project 3</h3>
-          <a href="https://github.com/EliaMart/HoriseonRefractory"><img id="first" src="./assets/css/images/placeholder.png" alt="placeholder 3" /></a>
-        </div>
-      </section>
-    </div>
-
-    <section>
-      <h2 id="contact">Contact</h2>
-      <ul class="uolist">
-        <li>Phone: 773-727-8552</li>
-        <li>Email: eliahaydeemartinez@gmail.com</li>
-      </ul>
+    <h2 id="contact">Contact</h2>
+    <section class="contact">
+      <div>Email: <a href="mailto:eliahaydeemartinez@gmail.com">eliahaydeemartinez@gmail.com</a></div>
+      <div>Phone: <a href="tel:773727-8552">773.727.8552</a></div>
+      <div>GitHub: <a href="https://github.com/EliaMart" target="_blank">GitHub</a></div>
+      <div>LinkedIn: <a href="https://www.linkedin.com/in/elia-martinez-996070208/" target="_blank">LinkedIn</a></div>
+      <div><a href="./assets/css/images/EliaMartinez.pdf" download>Download Resume</a></div>
     </section>
 
 
-    </section>
   </main>
+
+  <footer>
+    <h4 class="d-flex justify-content-center">© Elia Martinez 2022</h4>
+  </footer>
 
 </body>
 
